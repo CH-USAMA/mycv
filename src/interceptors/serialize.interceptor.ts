@@ -26,12 +26,12 @@ export class SerializeInterceptor implements NestInterceptor {
     // Run something before a request
     // by the request handler
     
-    console.log('Before Handler',context);
+    // console.log('Before Handler',context);
 
     return handler.handle().pipe(
         map((data : any) => {
             // run something before respose is sent
-            console.log("i am running before response is sent put",data);
+            // console.log("i am running before response is sent put",data);
             return plainToInstance(this.dto,data,
                 {excludeExtraneousValues : true});
         })
