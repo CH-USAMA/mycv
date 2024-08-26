@@ -46,6 +46,7 @@ export class AuthService {
     async signin(email : string, password : string)
     {
         //logic for signin
+        // console.log("sigining In")
         const [user] = await this.usersService.find(email);
         if(!user){
             throw new NotFoundException('user not found');
@@ -58,7 +59,7 @@ export class AuthService {
                 throw new BadRequestException('Bad Password');
                 }
                 // return user
-                console.log(user);
+                // console.log(user);
             return user;
 
 

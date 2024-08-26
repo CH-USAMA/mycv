@@ -1,8 +1,10 @@
+#if any of the requesting giving error comment all and just run that one 
+
 # POST http://localhost:3000/auth/signup
 # Content-Type: application/json
 
 # {
-#     "email": "asd@gmail.com",
+#     "email": "usama@gmail.com",
 #     "password": "123456"
 # }
 
@@ -10,14 +12,19 @@
 # Content-Type: application/json
 
 # {
-#     "email": "asd@gmail.com",
-#     "password": "123456"
+#     "email":"usama@gmail.com",
+#     "password":"123456"
 # }
 
-GET http://localhost:3000/auth/colors/red
+# GET http://localhost:3000/auth/colors/red
 
 
-GET http://localhost:3000/auth/colors
+# GET http://localhost:3000/auth/colors
+GET http://localhost:3000/auth/whoami
+
+# POST http://localhost:3000/auth/signout
+
+
 
 
 # ## find a user with ID
